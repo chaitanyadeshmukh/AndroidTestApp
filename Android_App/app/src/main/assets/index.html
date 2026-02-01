@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Page</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            gap: 20px;
+        }
+        button {
+            padding: 20px 40px;
+            font-size: 18px;
+            background-color: #0070f3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .deeplink {
+            background-color: #28a745;
+        }
+    </style>
+</head>
+<body>
+<button onclick="window.location.href='https://paywithbank-dev.americanexpress.com/payments/v1/pisp/?custom_data=eydrZXkxJzondmFsdWUxJywgJ2tleTInOid2YWx1ZTInfQ%3D%3D&locale=en_GB&request_id=2c2ba4f664505f928ade321a3d5624a3&timestamp=1769662884072&merchant_id=amex_dev_b308b688aa8740d4ba1b660bde93a98d&order_details=eyJraWQiOiJpZF9XV1hicnF3UzRBMGFNIiwiYWxnIjoiSFMyNTYifQ.eyJhbW91bnQiOiIwLjEwIiwiY3VycmVuY3kiOiJHQlAiLCJ0aW1lc3RhbXAiOjE3Njk2NjI4NzU2ODAsIm9yZGVyX2lkIjoiMTc2OTY2Mjg3NTY4MCIsImNvcnJlbGF0aW9uX2lkIjoiMTc2OTY2Mjg3Njc5MSIsImN1c3RvbWVyX2lkIjoiMTIzNDU2Nzg5IiwicGF5bWVudF9jb250ZXh0X2NvZGUiOiJFY29tbWVyY2VHb29kcyIsImRlbGl2ZXJ5X2FkZHJlc3MiOiJleUpyYVdRaU9pSnBaRjlYVjFoaWNuRjNVelJCTUdGTklpd2laVzVqSWpvaVFURXlPRU5DUXkxSVV6STFOaUlzSW1Gc1p5STZJa0V5TlRaTFZ5SjkuRThRNFpyUDVqdmd4Sm5MVGI1cEVMT1B1S1dkVHk0UktGbjBtLUJILUlSSmY0UklELTdOWllRLlkzUmgtU0JJN3czaWZkZGNkc1FXancuQkZzUEF2Wi1jYmhGdkVrY2d0MmppSVlGaXRub09KQkNwOWpnOXJOb3NsdkxJRVVDbFk0OUlDdE5ib3BaRzNteWwxZ2V0T1R6c2s0dTdsTlZpNWpFWWZJNmlDYS1GNTd6aDlWclU3bHBuc1JJU0RxS0JYT2JLRGUxSVdObnNqMUNTWDFBUnRMSERzVVhrYzRzNjYtaUh2OURPdmZrT3U2ZjJ3NUZOemVxZEhONkFrcWlCbDRHYkgxODBpWldfYVFzU1NnX205N01GRDJLVWlGNVdPWVpUX2xsYWc5LWUyUEJYNFhVNkUxRlNtX2ppMFdUZjU3amU1bHNxTnlabkswOS40VUlxLXhaUkpGWXJsTTVReDJkY2h3IiwicmVkaXJlY3RfdXJsIjoiaHR0cHM6Ly9heHBjby5jb20vcGlzcC9yZWRpcmVjdFVybFBvYy9zdWNjZXNzLmh0bWwiLCJlcnJvcl9yZWRpcmVjdF91cmwiOiJodHRwczovL2F4cGNvLmNvbS9waXNwL3JlZGlyZWN0VXJsUG9jL2Vycm9yLmh0bWwiLCJzZXNzaW9uX2lkIjoiMjI0YmI5MTQ4M2ZkNGJhMGJjMzMwMWYxNmM4ZTUwMzQifQ.zmrb8e1S8eNa0WURjcpNYmaVOTLZkaFP3VILA62aF1s&country_code=GB
+'">PWB Button
+</button>
+<a href="https://www.axpco.com/pisp/src/lisa-app-bank/qa_merchant_app?payload=JWT">
+    Pay with Bank
+</a>
+
+
+
+<button class="deeplink" onclick="window.location.href='myapp://main'">Go to MainActivity (Deep
+    Link)
+</button>
+
+<script>
+    // Example for the long URL you provided earlier if needed
+    const amexUrl = "https://paywithbank-dev.americanexpress.com/payments/v1/pisp/?custom_data=eydrZXkxJzondmFsdWUxJywgJ2tleTInOid2YWx1ZTInfQ%3D%3D&locale=en_GB&request_id=2c2ba4f664505f928ade321a3d5624a3&timestamp=1769662884072&merchant_id=amex_dev_b308b688aa8740d4ba1b660bde93a98d&order_details=eyJraWQiOiJpZF9XV1hicnF3UzRBMGFNIiwiYWxnIjoiSFMyNTYifQ.eyJhbW91bnQiOiIwLjEwIiwiY3VycmVuY3kiOiJHQlAiLCJ0aW1lc3RhbXAiOjE3Njk2NjI4NzU2ODAsIm9yZGVyX2lkIjoiMTc2OTY2Mjg3NTY4MCIsImNvcnJlbGF0aW9uX2lkIjoiMTc2OTY2Mjg3Njc5MSIsImN1c3RvbWVyX2lkIjoiMTIzNDU2Nzg5IiwicGF5bWVudF9jb250ZXh0X2NvZGUiOiJFY29tbWVyY2VHb29kcyIsImRlbGl2ZXJ5X2FkZHJlc3MiOiJleUpyYVdRaU9pSnBaRjY5VjFoaWNuRjNVelJCTUdGTklpd2laVzVqSWpvaVFURXlPRU5DUXkxSVV6STFOaUlzSW1Gc1p5STZJa0V5TlRaTFZ5SjkuRThRNFpyUDVqdmd4Sm5MVGI1cEVMT1B1S1dkVHk0UktGbjBtLUJILUlSSmY0UklELTdOWllRLlkzUmgtU0JJN3czaWZkZGNkc1FXancuQkZzUEF2Wi1jYmhGdkVrY2d0MmppSVlGaXRub09KQkNwOWpnOXJOb3NsdkxJRVVDbFk0OUlDdE5ib3BaRzNteWwxZ2V0T1R6c2s0dTdsTlZpNWpFWWZJNmlDYS1GNTd6aDlWclU3bHBuc1JJU0RxS0JYT2JLRGUxSVdObnNqMUNTWDFBUnRMSERzVVhrYzRzNjYtaUh2OURPdmZrT3U2ZjJ3NUZOemVxZEhONkFrcWlCbDRHYkgxODBpWld_YVFzU1NnX205N01GRDJLVWlGNVdPWVpUX2xsYWc5LWUyUEJYNFhVNkUxRlNtX2ppMFdUZjU3amU1bHNxTnlabkswOS40VUlxLXhaUkpGWXJsTTVReDJkY2h3IiwicmVkaXJlY3RfdXJsIjoiaHR0cHM6Ly9heHBjby5jb20vcGlzcC9yZWRpcmVjdFVybFBvYy9zdWNjZXNzLmh0bWwiLCJlcnJvcl9yZWRpcmVjdF91cmwiOiJodHRwczovL2F4cGNvLmNvbS9waXNwL3JlZGlyZWN0VXJsUG9jL2Vycm9yLmh0bWwiLCJzZXNzaW9uX2lkIjoiMjI0YmI5MTQ4M2ZkNGJhMGJjMzMwMWYxNmM4ZTUwMzQifQ.zmrb8e1S8eNa0WURjcpNYmaVOTLZkaFP3VILA62aF1s&country_code=GB";
+</script>
+</body>
+</html>
