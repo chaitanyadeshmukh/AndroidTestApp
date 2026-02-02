@@ -180,16 +180,18 @@ class MainActivity : AppCompatActivity() {
                             val state = uri.getQueryParameter("state")
                             val nonce = uri.getQueryParameter("nonce")
                             val scope = uri.getQueryParameter("scope")
+                            val request = uri.getQueryParameter("request")
                             val redirectUri = uri.getQueryParameter("redirect_uri")
                             
-                            Log.d(TAG, "Lisa App Bank - Merchant: $merchantApp")
-                            
+                            Log.d(TAG, "Lisa App Bank - Merchant: $redirectUri")
+
                             // Enable button if redirect_uri is present and append state_id/nonce
                             if (redirectUri != null) {
-                                val updatedRedirectUri = Uri.parse(redirectUri).buildUpon()
+                                val updatedRedirectUri = redirectUri.toUri().buildUpon()
                                     .appendQueryParameter("state_id", state)
-                                    .appendQueryParameter("nonce", nonce)
-                                    .build().toString()
+                                    .appendQueryParameter("code", nonce)
+                                    .appendQueryParameter("id_token", request)
+                                    .build().toString().replaceFirst("?", "#")
                                 
                                 Log.d(TAG, "Final Redirect URI: $updatedRedirectUri")
                                 currentRedirectUrl = updatedRedirectUri
